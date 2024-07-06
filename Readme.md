@@ -2,7 +2,9 @@
 
 Smart Garbage Disposal Management System (SGDMS) uses IoT and ultrasonic sensors for efficient waste management. Features include real-time bin fill monitoring, automated driver notifications, and interactive maps for bin locations. A user-friendly interface helps drivers confirm clearances and receive updates
 
-## Insatallation (Local
+## Installation
+
+setting up the project locally
 
 ```javascript
 npm install 
