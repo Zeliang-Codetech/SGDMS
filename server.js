@@ -38,8 +38,8 @@ io.on("connection", (socket) => {
 
     // for sending templates 
     var data = JSON.stringify({
-      to: "916002293409",
-      phoneId: "231065823421330",
+      to: `${process.env.TEST_NUMBER}`, //remove the GT and LT signs
+      phoneId: `${process.env.ZIXFLOW_PHONEID}`,
       templateName: "welcome_message",
       language: "en",
       variables: {
@@ -47,7 +47,7 @@ io.on("connection", (socket) => {
       },
       submissionStatus: true,
     });
-    
+
     var config = {
       method: "post",
       url: "https://api.zixflow.com/api/v1/campaign/whatsapp/send",
